@@ -1,0 +1,50 @@
+<div id="page-top" class="page-top">&nbsp;</div> <!-- used for anchorscroll -->
+
+<section id="home" class="section-product" ng-init="home.initView()">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                
+                <h1>
+                    Дыйкан
+                </h1>
+                <p>
+                    Вы вошли как: 
+                    <span class="text-variable">
+                        {{home.AuthData.password.email}}
+                    </span>
+                </p>
+      
+            </div>
+        </div>
+        
+        <hr class="star-light">
+        
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                
+                <button
+                    ng-click="home.goTo('admin.submit')"
+                    class="btn-choice">
+                    + Добавить товар
+                </button>
+                
+                <button
+                    ng-click="home.goTo('admin.items')"
+                    class="btn-choice">
+                    Менеджер товаров
+                </button>
+                
+                <button 
+                    ng-click="home.goTo('admin.sales')"
+                    class="btn-choice">
+                    Заказы и продажи
+                </button>
+      
+            </div>
+            
+        </div>
+
+    </div>
+</section>
